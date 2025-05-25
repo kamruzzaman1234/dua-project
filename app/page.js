@@ -1,95 +1,58 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Top_Header from "./component/right_first_area/Top_Header";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="flex">
+        <div className="w-[68px] h-[950px] flex justify-between flex-col items-center
+        py-[12px] px-[11.94px] bg-[#EEF6EB]">
+            <div className="cursor-pointer">
+                <img src="https://i.ibb.co/Mx7rx9Kk/logo.png"
+                 className="w-full" alt="img"></img>
+            </div>
+            <div className="flex flex-col gap-[24px]">
+                <div className="p-[8px] transition-[10px] active bg-[#D8E7D3] rounded-[10px]">
+                      <img src="https://i.ibb.co/W4sfscvL/main-component.png" className="w-full object-cover"
+                       alt=""/>
+                </div>
+                <div className="p-[8px] transition-[10px] active hover:bg-[#D8E7D3] rounded-[10px]">
+                      <img src="https://i.ibb.co/jk906rXc/category-2.png" className="w-full object-cover"
+                       alt=""/>
+                </div>
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+                <div className="p-[8px] transition-[10px] active hover:bg-[#D8E7D3] rounded-[10px]">
+                      <img src="https://i.ibb.co/DDv62trx/lamp-charge.png" className="w-full object-cover"
+                       alt=""/>
+                </div>
+
+
+                <div className="p-[8px] transition-[10px] active hover:bg-[#D8E7D3] rounded-[10px]">
+                      <img src="https://i.ibb.co/tTJ9J7hX/archive-minus.png" className="w-full object-cover"
+                       alt=""/>
+                </div>
+                <div className="p-[8px] transition-[10px] active hover:bg-[#D8E7D3] rounded-[10px]">
+                      <img src="https://i.ibb.co/XZh1tSbL/hospital.png" className="w-full object-cover"
+                       alt=""/>
+                </div>
+                <div className="p-[8px] transition-[10px] active hover:bg-[#D8E7D3] rounded-[10px]">
+                      <img src="https://i.ibb.co/whNF64xL/book.png" className="w-full object-cover"
+                       alt=""/>
+                </div>
+            </div>
+            <div className="flex flex-col gap-[24px]">
+                <div className="p-[8px] transition-[10px] active hover:bg-[#D8E7D3] rounded-[10px]">
+                      <img src="https://i.ibb.co/PvWYVX22/cup.png" className="w-full object-cover"
+                       alt=""/>
+                </div>
+
+                <div className="p-[8px] transition-[10px] active hover:bg-[#D8E7D3] rounded-[10px]">
+                      <img src="https://i.ibb.co/3yyXxNNB/menu.png" className="w-full object-cover"
+                       alt=""/>
+                </div>
+            </div>
+        </div>      
+        <div className="w-full">
+            <Top_Header></Top_Header>
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
     </div>
   );
 }
