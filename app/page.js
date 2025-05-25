@@ -49,10 +49,20 @@ export default function Home() {
                        alt=""/>
                 </div>
             </div>
-        </div>      
-        <div className="w-full">
-            <Top_Header></Top_Header>
-        </div>
+        </div>  
+            <div className="w-full flex flex-col">
+                <div className="w-full">
+               <Top_Header></Top_Header>
+                </div>
+
+                <div className="w-full px-[24px] flex gap-[48px]">
+                    <div className="w-[280px]"></div>
+                    <div className=""></div>
+                    <div className="w-[280px]"></div>
+                 </div>
+            </div>    
+        
+        
     </div>
   );
 }
